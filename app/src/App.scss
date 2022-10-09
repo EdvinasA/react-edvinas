@@ -4,8 +4,8 @@
   background-color: #dddddd;
   width: 100%;
   min-height: 100vh;
-  // max-width: 600px;
-  // margin: 0 auto;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .App-header {
@@ -16,13 +16,23 @@
 
 .App-body {
   background-color: #dddddd;
+  font-size: 100px;
+  font-weight: 600;
+  padding: 100px 100px;
+}
+
+.App-second-description {
+ font-size: 32px;
+ font-weight: 400;
+ padding-top: 60px;
+ width: 700px;
 }
 
 .App-header-box {
   display: flex;
   justify-content: space-between;
-  padding: 20px 50px;
-  font-size: 28px;
+  padding: 20px 100px;
+  font-size: 48px;
 }
 
 button, input[type="submit"], input[type="reset"] {

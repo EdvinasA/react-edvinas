@@ -7,7 +7,7 @@ class MyComponent extends React.Component {
   state = {
     show: true
   }
-
+  
   setStateShow() {
     // eslint-disable-next-line react/no-direct-mutation-state
     this.state.show = !this.state.show;
@@ -20,7 +20,7 @@ class MyComponent extends React.Component {
         from={{ opacity: 0 }}
         enter={{ opacity: 1 }}
         reverse={this.state.show}
-        delay={200}
+        delay={500}
         config={config.molasses}
         onRest={() => this.setStateShow()}>
         {(styles, item) =>

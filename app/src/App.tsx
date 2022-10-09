@@ -1,10 +1,9 @@
 import React from 'react';
-import { animated, config, Transition } from 'react-spring';
+import { Controller, Scene } from 'react-scrollmagic';
 import './App.scss';
 import MyComponent from './components/MyComponent/MyComponent';
 
 class App extends React.Component {
-
   state = {
     show: false
   }
@@ -28,9 +27,19 @@ class App extends React.Component {
           </div>
         </header>
         <body className="App-body">
-          <div>
-        
-          </div>
+          <Controller>
+            <Scene duration={900} pin>
+              <div>
+                <div>
+                  Full-Stack Software Engineer
+                </div>
+                <div className="App-second-description">
+                  I'm Edvinas Alimas, a software engineer -
+                  I work to create solutions that will help you to be ready for the future.
+                </div>
+              </div>
+            </Scene>
+          </Controller>
         </body>
       </div>
     );
