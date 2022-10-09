@@ -81,6 +81,18 @@ button, input[type="submit"], input[type="reset"] {
   transition: all .35s;
 }
 
+.App-footer {
+  text-align: center;
+  width: 100%;
+}
+
+.App-footer-get-in-touch {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .App-button:hover {
   color: #fff;
 }

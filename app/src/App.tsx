@@ -21,14 +21,14 @@ class App extends React.Component {
             <div><MyComponent></MyComponent></div>
             <div className="App-contact-button-wrapper">
               <div className="wrapper">
-                <a href="/" className="App-button"><span>Contact</span></a>
+                <a href="/" className="App-button"><span>CONTACT</span></a>
               </div>
             </div>
           </div>
         </header>
         <body>
           <Controller>
-            <Scene duration={900} pin={false}>
+            <Scene duration={50} pin={true}>
               <div className="App-body">
                 <div>
                   Full-Stack
@@ -44,6 +44,23 @@ class App extends React.Component {
             </Scene>
           </Controller>
         </body>
+        <footer className="App-footer">
+          <div className="App-footer-first-header">
+            Looking for a Full-Stack Software Engineer?
+          </div>
+          <div>
+            <div>
+
+            </div>
+            <div className="App-footer-get-in-touch">
+              <div className="App-contact-button-wrapper">
+                <div className="wrapper">
+                  <a href="/" className="App-button"><span>EMAIL</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
       </div>
     );
   }
