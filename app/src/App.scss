@@ -18,20 +18,20 @@
   background-color: #dddddd;
   font-size: 100px;
   font-weight: 600;
-  padding: 100px 100px;
+  padding: 100px 60px;
 }
 
 .App-second-description {
  font-size: 32px;
  font-weight: 400;
  padding-top: 60px;
- width: 700px;
+ max-width: 700px;
 }
 
 .App-header-box {
   display: flex;
   justify-content: space-between;
-  padding: 20px 100px;
+  padding: 50px 60px;
   font-size: 48px;
 }
 
@@ -48,14 +48,14 @@ button, input[type="submit"], input[type="reset"] {
 .App-button {
   border-radius: 30px;
   display: block;
-  width: 110px;
-  height: 40px;
-  line-height: 40px;
-  font-size: 18px;
+  width: 140px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 22px;
   font-family: sans-serif;
   text-decoration: none;
   color: black;
-  border: 1px solid black;
+  border: 2px solid black;
   letter-spacing: 2px;
   text-align: center;
   position: relative;
@@ -69,13 +69,13 @@ button, input[type="submit"], input[type="reset"] {
 }
 
 .App-button:after {
-  border-radius: 20px;
+  border-radius: 19px;
   position: absolute;
   content: "";
   top: 0;
   left: 0;
   width: 0;
-  height: 45px;
+  height: 60px;
   overflow: hidden;
   background: black;
   transition: all .35s;
@@ -87,4 +87,95 @@ button, input[type="submit"], input[type="reset"] {
 
 .App-button:hover:after {
   width: 100%;
+}
+
+@media (max-width: 1150px) {
+  .App-body {
+    font-size: 90px;
+  }
+  .App-second-description {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .App-body {
+    font-size: 85px;
+  }
+  .App-second-description {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .App-body {
+    font-size: 80px;
+  }
+  .App-second-description {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 900px) {
+  .App-body {
+    font-size: 75px;
+  }
+  .App-second-description {
+    font-size: 28px;
+  }
+}
+
+
+@media (max-width: 850px) {
+  .App-body {
+    font-size: 65px;
+  }
+  .App-second-description {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 750px) {
+  .App-body {
+    font-size: 60px;
+  }
+  .App-second-description {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .App-body {
+    font-size: 45px;
+  }
+  .App-second-description {
+    font-size: 18px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .App-body {
+    font-size: 40px;
+  }
+  .App-second-description {
+    font-size: 14px;
+    padding-top: 40px;
+  }
+  .App-contact-button-wrapper {
+    padding-top: 20px;
+  }
+  .App-header-box {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 500px) {
+  .App-body {
+    font-size: 30px;
+  }
+  .App-second-description {
+    font-size: 10px;
+    padding-top: 20px;
+  }
 }

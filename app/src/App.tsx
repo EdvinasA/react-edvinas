@@ -21,17 +21,20 @@ class App extends React.Component {
             <div><MyComponent></MyComponent></div>
             <div className="App-contact-button-wrapper">
               <div className="wrapper">
-                <a href="#" className="App-button"><span>Contact</span></a>
+                <a href="/" className="App-button"><span>Contact</span></a>
               </div>
             </div>
           </div>
         </header>
-        <body className="App-body">
+        <body>
           <Controller>
-            <Scene duration={900} pin>
-              <div>
+            <Scene duration={900} pin={false}>
+              <div className="App-body">
                 <div>
-                  Full-Stack Software Engineer
+                  Full-Stack
+                </div>
+                <div>
+                  Software Engineer
                 </div>
                 <div className="App-second-description">
                   I'm Edvinas Alimas, a software engineer -
