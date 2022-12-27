@@ -1,38 +1,100 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400|Raleway:300);
-
 .App {
-  background-color: #dddddd;
   width: 100%;
   min-height: 100vh;
   max-width: 1920px;
   margin: 0 auto;
+  font-family: 'Fahkwang', sans-serif;
 }
 
 .App-header {
-  background-color: #dddddd;
-  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-  color: #000000;
+  color: white;
+  font-family: Fahkwang, sans-serif;
 }
 
-.App-body {
-  background-color: #dddddd;
-  font-size: 100px;
-  font-weight: 600;
-  padding: 100px 60px;
-}
-
-.App-second-description {
- font-size: 32px;
- font-weight: 400;
- padding-top: 60px;
- max-width: 700px;
-}
-
-.App-header-box {
+.header {
+  font-size: 25px;
+  font-family: Fahkwang, sans-serif;
   display: flex;
   justify-content: space-between;
-  padding: 50px 60px;
-  font-size: 48px;
+  padding: 18px 23px;
+}
+
+.body-image-wrapper {
+  text-align: center;
+  padding-top: 25px;
+}
+
+.body-image {
+  width: 302px;
+  height: 308px;
+  border-radius: 252px;
+}
+
+.header-icon {
+  padding-top: 3px;
+}
+
+.body {
+  padding-top: 15px;
+  color: white;
+  text-align: center;
+}
+
+.body-services-title {
+  font-weight: 400;
+  font-size: 30px;
+  font-family: "Fahkwang", sans-serif;
+  line-height: 39px;
+  padding-bottom: 10px;
+}
+
+.body-services-points {
+  padding: 0 37px;
+  text-align: left;
+  font-family: "Fahkwang", sans-serif;
+}
+
+.body-services-point {
+  display: list-item;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: justify;
+  padding: 5px 0;
+}
+
+.body-quote {
+  font-family: "Fahkwang", sans-serif;
+  padding: 15px 37px;
+}
+
+.body-quote-wrapper {
+  font-family: "Fahkwang", sans-serif;
+  font-size: 18px;
+  border: 2px solid white;
+  border-radius: 15px;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.quote-text {
+  padding: 5px 52px;
+}
+
+.contact-wrapper {
+  font-family: "Fahkwang", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 39px;
+  padding: 25px 0;
+}
+
+.email-wrapper {
+  font-family: "Fahkwang", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 39px;
+  padding: 10px 0 80px 0;
 }
 
 button, input[type="submit"], input[type="reset"] {
@@ -82,15 +144,12 @@ button, input[type="submit"], input[type="reset"] {
 }
 
 .App-footer {
+  color: white;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
   text-align: center;
   width: 100%;
-}
-
-.App-footer-get-in-touch {
-  display: flex;
-  justify-content: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
 }
 
 .App-button:hover {
@@ -99,95 +158,4 @@ button, input[type="submit"], input[type="reset"] {
 
 .App-button:hover:after {
   width: 100%;
-}
-
-@media (max-width: 1150px) {
-  .App-body {
-    font-size: 90px;
-  }
-  .App-second-description {
-    font-size: 28px;
-  }
-}
-
-@media (max-width: 1100px) {
-  .App-body {
-    font-size: 85px;
-  }
-  .App-second-description {
-    font-size: 28px;
-  }
-}
-
-@media (max-width: 1000px) {
-  .App-body {
-    font-size: 80px;
-  }
-  .App-second-description {
-    font-size: 28px;
-  }
-}
-
-@media (max-width: 900px) {
-  .App-body {
-    font-size: 75px;
-  }
-  .App-second-description {
-    font-size: 28px;
-  }
-}
-
-
-@media (max-width: 850px) {
-  .App-body {
-    font-size: 65px;
-  }
-  .App-second-description {
-    font-size: 28px;
-  }
-}
-
-@media (max-width: 750px) {
-  .App-body {
-    font-size: 60px;
-  }
-  .App-second-description {
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 700px) {
-  .App-body {
-    font-size: 45px;
-  }
-  .App-second-description {
-    font-size: 18px;
-  }
-}
-
-
-@media (max-width: 600px) {
-  .App-body {
-    font-size: 40px;
-  }
-  .App-second-description {
-    font-size: 14px;
-    padding-top: 40px;
-  }
-  .App-contact-button-wrapper {
-    padding-top: 20px;
-  }
-  .App-header-box {
-    font-size: 38px;
-  }
-}
-
-@media (max-width: 500px) {
-  .App-body {
-    font-size: 30px;
-  }
-  .App-second-description {
-    font-size: 10px;
-    padding-top: 20px;
-  }
 }

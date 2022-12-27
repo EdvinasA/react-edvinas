@@ -1,67 +1,54 @@
 import React from 'react';
-import { Controller, Scene } from 'react-scrollmagic';
 import './App.scss';
-import MyComponent from './components/MyComponent/MyComponent';
+import {Menu} from '@mui/icons-material';
+import {Divider} from "@mui/material";
 
 class App extends React.Component {
-  state = {
-    show: false
-  }
-
-  setStateShow() {
-    // eslint-disable-next-line react/no-direct-mutation-state
-    this.state.show = !this.state.show;
-  }
 
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <div className="App-header-box">
-            <div><MyComponent></MyComponent></div>
-            <div className="App-contact-button-wrapper">
-              <div className="wrapper">
-                <a href="/" className="App-button"><span>CONTACT</span></a>
-              </div>
+        <div className="App">
+          <header className="App-header">
+            <div className='header'>
+              <div>Edvinas Alimas</div>
+              <div className='header-icon'><Menu/></div>
             </div>
-          </div>
-        </header>
-        <body>
-          <Controller>
-            <Scene duration={50} pin={true}>
-              <div className="App-body">
-                <div>
-                  Full-Stack
-                </div>
-                <div>
-                  Software Engineer
-                </div>
-                <div className="App-second-description">
-                  I'm Edvinas Alimas, a software engineer -
-                  I work to create solutions that will help you to be ready for the future.
-                </div>
-              </div>
-            </Scene>
-          </Controller>
-        </body>
-        <footer className="App-footer">
-          <div className="App-footer-first-header">
-            Looking for a Full-Stack Software Engineer?
-          </div>
-          <div>
+            <Divider style={{borderColor: 'white', borderBottomWidth: 'medium'}} className='header-divider'/>
+          </header>
+          <body>
+          <div className='body'>
+            <div className='body-image-wrapper'>
+              <img className='body-image' src={require('./assets/main-picture.jpg')} alt='a'/>
+            </div>
             <div>
-
-            </div>
-            <div className="App-footer-get-in-touch">
-              <div className="App-contact-button-wrapper">
-                <div className="wrapper">
-                  <a href="/" className="App-button"><span>EMAIL</span></a>
-                </div>
+              <div className='body-services-title'>My Services</div>
+              <div className='body-services-points'>
+                <div className='body-services-point'>This is a concise description of your previous work experience and the responsibilities you had.</div>
+                <div className='body-services-point'>This is a concise description of your previous work experience and the responsibilities you had.</div>
+                <div className='body-services-point'>This is a concise description of your previous work experience and the responsibilities you had.</div>
               </div>
             </div>
+            <div className='body-quote'>
+              <div className='body-quote-wrapper'>
+                <div className='quote-text'>
+                  "I don’t stop when I’m tired. I stop when I’m done."
+                </div>
+                <div>David Goggins</div>
+              </div>
+            </div>
+            <div>
+              <div className='contact-wrapper'>
+                <div>Got a Project?</div>
+                <div>Lets Talk!</div>
+              </div>
+              <div className='email-wrapper'>edvinasalimas98@gmail.com</div>
+            </div>
           </div>
-        </footer>
-      </div>
+          </body>
+          <footer className="App-footer">
+            <div>©2022 by Edvinas Alimas</div>
+          </footer>
+        </div>
     );
   }
 }
