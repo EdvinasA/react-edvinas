@@ -41,7 +41,7 @@ export default function App() {
           <RouterProvider router={routes}/>
         </div>
         <footer className="App-footer">
-          <div>©2022 by Edvinas Alimas</div>
+          <div>©2022 by Edvinas Alimas edvinasalimas98@gmail.com</div>
         </footer>
         <Dialog
             fullScreen

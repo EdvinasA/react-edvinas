@@ -1,1 +1,79 @@
-.AboutComponent {}
+.about {
+  color: white;
+}
+
+.about-header {
+  font-size: 30px;
+  font-family: 'Fahkwang', sans-serif;
+  line-height: 39px;
+  text-align: center;
+  padding: 56px 0 8px 0;
+}
+
+.about-header-description {
+  font-size: 18px;
+  font-family: 'Fahkwang', sans-serif;
+  line-height: 23px;
+  text-align: justify;
+  padding: 3px 26px 20px 26px;
+}
+
+.about-description-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 39px;
+  text-align: center;
+  padding: 25px 0;
+}
+
+.experience-title {
+  font-family: 'Fahkwang';
+  font-size: 20px;
+  line-height: 24px;
+  text-align: left;
+  padding: 10px 0;
+}
+
+.experience-date {
+  font-family: 'Fahkwang';
+  font-size: 14px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.experience-description {
+  font-family: 'Fahkwang';
+  font-size: 17px;
+  line-height: 24px;
+  text-align: left;
+  text-overflow: initial;
+}
+
+.experience-wrapper {
+  padding: 5px 26px;
+}
+
+.about-contact-button {
+  text-align: center;
+}
+
+button, input[type="submit"], input[type="reset"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.about-contact-wrapper {
+  text-align: center;
+}
+
+.about-contact-button {
+  border: 2px solid white;
+  border-radius: 25px;
+  height: 35px;
+  width: 90px;
+}

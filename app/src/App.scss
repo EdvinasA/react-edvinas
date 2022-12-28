@@ -109,42 +109,6 @@ button, input[type="submit"], input[type="reset"] {
   outline: inherit;
 }
 
-.App-button {
-  border-radius: 30px;
-  display: block;
-  width: 140px;
-  height: 60px;
-  line-height: 60px;
-  font-size: 22px;
-  font-family: sans-serif;
-  text-decoration: none;
-  color: black;
-  border: 2px solid black;
-  letter-spacing: 2px;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  transition: all .35s;
-}
-
-.App-button span {
-  position: relative;
-  z-index: 2;
-}
-
-.App-button:after {
-  border-radius: 19px;
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 60px;
-  overflow: hidden;
-  background: black;
-  transition: all .35s;
-}
-
 .App-footer {
   color: white;
   font-weight: 400;
@@ -153,12 +117,4 @@ button, input[type="submit"], input[type="reset"] {
   text-align: center;
   width: 100%;
   padding: 15px 0;
-}
-
-.App-button:hover {
-  color: #fff;
-}
-
-.App-button:hover:after {
-  width: 100%;
 }
