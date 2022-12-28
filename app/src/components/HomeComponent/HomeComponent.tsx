@@ -32,7 +32,7 @@ const HomeComponent = (props: HomeComponentProps) => {
               <div>Got a Project?</div>
               <div>Lets Talk!</div>
             </div>
-            <div className='email-wrapper'>edvinasalimas98@gmail.com</div>
+            <div className='email-wrapper'><a href="mailto:edvinasalimas98@gmail.com">edvinasalimas98@gmail.com</a></div>
           </div>
         </div>
         </body>
