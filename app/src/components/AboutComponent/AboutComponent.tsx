@@ -16,7 +16,7 @@ const AboutComponent = () => {
           </div>
         </div>
         <div className='about-contact-wrapper'>
-          <button className='about-contact-button'>Contact</button>
+          <a className='about-contact-button' href="mailto:edvinasalimas98@gmail.com">Contact</a>
         </div>
         <div>
           <div>Picture</div>

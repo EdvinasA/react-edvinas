@@ -74,6 +74,7 @@ button, input[type="submit"], input[type="reset"] {
 .about-contact-button {
   border: 2px solid white;
   border-radius: 25px;
-  height: 35px;
+  display: inline-block;
+  height: 23px;
   width: 90px;
 }

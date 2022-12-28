@@ -32,7 +32,7 @@ export default function App() {
       <div className="App">
         <header className="App-header">
           <div className='header'>
-            <div>Edvinas Alimas</div>
+            <div><a href="/">Edvinas Alimas</a></div>
             <div className='header-icon' onClick={handleClickOpen}><Menu/></div>
           </div>
           <Divider style={{borderColor: 'white', borderBottomWidth: 'medium'}} className='header-divider'/>
@@ -41,7 +41,7 @@ export default function App() {
           <RouterProvider router={routes}/>
         </div>
         <footer className="App-footer">
-          <div>©2022 by Edvinas Alimas edvinasalimas98@gmail.com</div>
+          <div>©2022 by Edvinas Alimas <a href="mailto:edvinasalimas98@gmail.com">edvinasalimas98@gmail.com</a></div>
         </footer>
         <Dialog
             fullScreen
