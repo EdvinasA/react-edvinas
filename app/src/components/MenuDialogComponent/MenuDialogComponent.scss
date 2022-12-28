@@ -1,0 +1,24 @@
+.menu-dialog {
+  background-color: #000000;
+  color: white;
+  font-family: 'Fahkwang', sans-serif;
+  min-height: 100vh;
+  padding-top: 10px;
+  width: 100%;
+}
+
+.menu-item-with-close {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 25px;
+}
+
+.menu-item-close-button,
+.menu-item-home-button {
+  cursor: pointer;
+}
+
+.menu-item {
+  cursor: pointer;
+  padding: 15px 25px;
+}

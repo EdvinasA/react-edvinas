@@ -1,56 +1,56 @@
 import React from 'react';
 import './App.scss';
 import {Menu} from '@mui/icons-material';
-import {Divider} from "@mui/material";
+import {Dialog, Divider} from "@mui/material";
+import Slide from '@mui/material/Slide';
+import {TransitionProps} from "@mui/material/transitions";
+import MenuDialogComponent from "./components/MenuDialogComponent/MenuDialogComponent";
+import {RouterProvider} from "react-router";
+import {routes} from "./routes";
 
-class App extends React.Component {
+const Transition = React.forwardRef(function Transition(
+    props: TransitionProps & {
+      children: React.ReactElement;
+    },
+    ref: React.Ref<unknown>,
+) {
+  return <Slide direction="up" ref={ref} {...props} />;
+});
 
-  render() {
-    return (
-        <div className="App">
-          <header className="App-header">
-            <div className='header'>
-              <div>Edvinas Alimas</div>
-              <div className='header-icon'><Menu/></div>
-            </div>
-            <Divider style={{borderColor: 'white', borderBottomWidth: 'medium'}} className='header-divider'/>
-          </header>
-          <body>
-          <div className='body'>
-            <div className='body-image-wrapper'>
-              <img className='body-image' src={require('./assets/main-picture.jpg')} alt='a'/>
-            </div>
-            <div>
-              <div className='body-services-title'>My Services</div>
-              <div className='body-services-points'>
-                <div className='body-services-point'>This is a concise description of your previous work experience and the responsibilities you had.</div>
-                <div className='body-services-point'>This is a concise description of your previous work experience and the responsibilities you had.</div>
-                <div className='body-services-point'>This is a concise description of your previous work experience and the responsibilities you had.</div>
-              </div>
-            </div>
-            <div className='body-quote'>
-              <div className='body-quote-wrapper'>
-                <div className='quote-text'>
-                  "I don’t stop when I’m tired. I stop when I’m done."
-                </div>
-                <div>David Goggins</div>
-              </div>
-            </div>
-            <div>
-              <div className='contact-wrapper'>
-                <div>Got a Project?</div>
-                <div>Lets Talk!</div>
-              </div>
-              <div className='email-wrapper'>edvinasalimas98@gmail.com</div>
-            </div>
+export default function App() {
+  const [open, setOpen] = React.useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
+  return (
+      <div className="App">
+        <header className="App-header">
+          <div className='header'>
+            <div>Edvinas Alimas</div>
+            <div className='header-icon' onClick={handleClickOpen}><Menu/></div>
           </div>
-          </body>
-          <footer className="App-footer">
-            <div>©2022 by Edvinas Alimas</div>
-          </footer>
+          <Divider style={{borderColor: 'white', borderBottomWidth: 'medium'}} className='header-divider'/>
+        </header>
+        <div>
+          <RouterProvider router={routes}/>
         </div>
-    );
-  }
+        <footer className="App-footer">
+          <div>©2022 by Edvinas Alimas</div>
+        </footer>
+        <Dialog
+            fullScreen
+            open={open}
+            onClose={handleClose}
+            TransitionComponent={Transition}
+        >
+          <MenuDialogComponent closeDialog={handleClose}></MenuDialogComponent>
+        </Dialog>
+      </div>
+  );
 }
-
-export default App;
