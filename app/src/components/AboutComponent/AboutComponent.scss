@@ -66,6 +66,16 @@ button, input[type="submit"], input[type="reset"] {
   outline: inherit;
 }
 
+.about-picture {
+  text-align: center;
+  padding: 20px 0 0 0;
+  img {
+    border-radius: 120px;
+    width: 250px;
+    height: 250px;
+  }
+}
+
 .about-contact-wrapper {
   text-align: center;
 }

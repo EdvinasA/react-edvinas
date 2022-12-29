@@ -1,4 +1,4 @@
-import React, {FC} from 'react';
+import React from 'react';
 import './AboutComponent.scss';
 
 interface AboutComponentProps {
@@ -19,8 +19,14 @@ const AboutComponent = () => {
           <a className='about-contact-button' href="mailto:edvinasalimas98@gmail.com">Contact</a>
         </div>
         <div>
-          <div>Picture</div>
+          <div className='about-picture'><img src={require('./another-picture.jpg')} alt='Secondary picture'/></div>
           <div className='about-description-title'>Professional History</div>
+          <div className='experience-wrapper'>
+            <div className='experience-title'>Accountant</div>
+            <div className='experience-date'>September 2019 - February 2022</div>
+            <div className='experience-description'>Working as accountant, and working on task such as payroll calculation, daily tasks like entering invoices,
+            creating reports for institutions, creating financial documents for the end of the year, mentoring new comers into job on how everything works.</div>
+          </div>
           <div className='experience-wrapper'>
             <div className='experience-title'>Freelance developer</div>
             <div className='experience-date'>December 2020 - June 2021</div>
@@ -48,7 +54,7 @@ const AboutComponent = () => {
             <div className='experience-title'>Cognizant Mentor</div>
             <div className='experience-date'>December 2022 - Now</div>
             <div className='experience-description'>Helping creating tests for sourcery academy by cognizant having a team of students that want to join the company.
-              Guiding the team in working on a real life project advising on how to manage the work.
+              Guiding the team in working on a real life project advising on how to manage the work. Helping setup project from start to finish.
               </div>
           </div>
         </div>
