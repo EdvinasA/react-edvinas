@@ -25,10 +25,13 @@
 }
 
 .body-image {
-  width: 200px;
-  height: 200px;
-  //background-image: url('./assets/main-picture.jpg');
-  border-radius: 300px;
+  text-align: center;
+  width: 100%;
+  img {
+    width: 200px;
+    height: 200px;
+    border-radius: 300px;
+  }
 }
 
 .header-icon {
@@ -80,7 +83,7 @@
 }
 
 .quote-text {
-  padding: 5px 52px;
+  padding: 5px 25px;
 }
 
 .contact-wrapper {

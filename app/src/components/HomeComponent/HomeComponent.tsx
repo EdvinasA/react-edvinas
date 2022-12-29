@@ -9,7 +9,7 @@ const HomeComponent = (props: HomeComponentProps) => {
         <body>
         <div className='body'>
           <div className='body-image-wrapper'>
-            <div className='body-image'></div>
+            <div className='body-image'><img src={require('./main-picture-smaller.png')} alt='main'/></div>
           </div>
           <div>
             <div className='body-services-title'>My Services</div>
