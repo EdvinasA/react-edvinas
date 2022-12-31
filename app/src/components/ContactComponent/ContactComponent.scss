@@ -1,7 +1,7 @@
 .contact-wrapper {
   color: white;
-  width: 350px;
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 .contact-title {
   text-align: center;
@@ -45,4 +45,19 @@ button, input[type="submit"], input[type="reset"] {
   display: inline-block;
   height: 45px;
   width: 90px;
+}
+
+
+@media (min-width: 1280px) {
+  .contact-wrapper {
+    display: grid;
+    grid-template-columns: 30% 70%;
+  }
+  .contact-title {
+    padding-top: 90px;
+  }
+  .first-two-fields-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

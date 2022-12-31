@@ -32,42 +32,45 @@ const ContactComponent = () => {
   };
 
   const handleChange = (e: any) => {
-    setContact({ ...contact, [e.target.name]: e.target.value });
+    setContact({...contact, [e.target.name]: e.target.value});
   };
 
 
   return (
       <div className="contact-wrapper">
-        <div className='contact-title'>
-          Get in Touch!
-        </div>
+          <div className='contact-title'>
+            Get in Touch!
+          </div>
         <div>
-          <div></div>
-          <div className='contact-field'><TextField name='name' onChange={handleChange} fullWidth sx={{
-            '& .MuiInput-underline:before': { borderBottomColor: 'white' },
-            '& .MuiInput-underline:after': { borderBottomColor: 'white' },
-          }}
-              id="standard-basic" label="Name" variant="standard" placeholder='Enter your name' required
-                                                    InputLabelProps={{
-                                                      style: { color: 'white' },
-                                                    }}/></div>
-          <div className='contact-field'><TextField name='email' onChange={handleChange} fullWidth sx={{
-            '& .MuiInput-underline:before': { borderBottomColor: 'white' },
-            '& .MuiInput-underline:after': { borderBottomColor: 'white' },
-          }}
-                                                    id="standard-basic" label="Email" variant="standard" placeholder='Enter your email' required
-                                                    InputLabelProps={{
-                                                      style: { color: 'white' },
-                                                    }}/></div>
+          <div className='first-two-fields-wrapper'>
+            <div className='contact-field'><TextField name='name' onChange={handleChange} fullWidth sx={{
+              '& .MuiInput-underline:before': {borderBottomColor: 'white'},
+              '& .MuiInput-underline:after': {borderBottomColor: 'white'},
+            }}
+                                                      id="standard-basic" label="Name" variant="standard" placeholder='Enter your name' required
+                                                      InputLabelProps={{
+                                                        style: {color: 'white'},
+                                                      }}/></div>
+            <div className='contact-field'><TextField name='email' onChange={handleChange} fullWidth sx={{
+              '& .MuiInput-underline:before': {borderBottomColor: 'white'},
+              '& .MuiInput-underline:after': {borderBottomColor: 'white'},
+            }}
+                                                      id="standard-basic" label="Email" variant="standard" placeholder='Enter your email' required
+                                                      InputLabelProps={{
+                                                        style: {color: 'white'},
+                                                      }}/></div>
+          </div>
           <div className='contact-field'><TextField name='message' onChange={handleChange} fullWidth multiline rows={4} sx={{
-            '& .MuiInput-underline:before': { borderBottomColor: 'white' },
-            '& .MuiInput-underline:after': { borderBottomColor: 'white' },
+            '& .MuiInput-underline:before': {borderBottomColor: 'white'},
+            '& .MuiInput-underline:after': {borderBottomColor: 'white'},
           }}
                                                     id="standard-basic" label="Message" variant="standard" placeholder='Enter your message' required
                                                     InputLabelProps={{
-                                                      style: { color: 'white' },
+                                                      style: {color: 'white'},
                                                     }}/></div>
-          <div className='submit-button-wrapper'><button className='submit-button' onClick={onSubmit}>Submit</button></div>
+          <div className='submit-button-wrapper'>
+            <button className='submit-button' onClick={onSubmit}>Submit</button>
+          </div>
         </div>
       </div>
   );

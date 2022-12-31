@@ -87,3 +87,11 @@ button, input[type="submit"], input[type="reset"] {
   height: 23px;
   width: 90px;
 }
+
+
+@media (min-width: 1280px) {
+  .experience-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
