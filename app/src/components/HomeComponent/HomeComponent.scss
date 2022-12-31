@@ -99,6 +99,20 @@
 }
 
 
-@media(max-width: 1280px) {
-
+@media(min-width: 1280px) {
+  .body-image {
+    img {
+      width: 350px;
+      height: 350px;
+      border-radius: 300px;
+    }
+  }
+  .body-quote-wrapper {
+    width: 35%;
+    margin: 0 auto;
+  }
+  .body-services-points {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
