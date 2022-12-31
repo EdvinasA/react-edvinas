@@ -63,7 +63,7 @@ export default function App() {
         </div>
         <footer className="App-footer">
           <div><a href="mailto:edvinasalimas98@gmail.com">edvinasalimas98@gmail.com</a></div>
-          <div>©2022 by Edvinas Alimas</div>
+          <div>©2023 by Edvinas Alimas</div>
         </footer>
         <Dialog
             fullScreen
