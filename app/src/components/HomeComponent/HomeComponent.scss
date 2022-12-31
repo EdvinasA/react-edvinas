@@ -11,14 +11,6 @@
   font-family: Fahkwang, sans-serif;
 }
 
-.header {
-  font-size: 25px;
-  font-family: Fahkwang, sans-serif;
-  display: flex;
-  justify-content: space-between;
-  padding: 18px 23px;
-}
-
 .body-image-wrapper {
   text-align: center;
   padding-top: 25px;
@@ -32,11 +24,6 @@
     height: 200px;
     border-radius: 300px;
   }
-}
-
-.header-icon {
-  cursor: pointer;
-  padding-top: 3px;
 }
 
 .body {
@@ -109,4 +96,9 @@
   font-size: 18px;
   line-height: 39px;
   padding: 10px 0 80px 0;
+}
+
+
+@media(max-width: 1280px) {
+
 }

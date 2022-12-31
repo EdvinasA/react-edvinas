@@ -19,84 +19,9 @@
   padding: 18px 23px;
 }
 
-.body-image-wrapper {
-  text-align: center;
-  padding-top: 25px;
-}
-
-.body-image {
-  width: 200px;
-  height: 200px;
-  background-image: url('./assets/main-picture.jpg');
-  border-radius: 300px;
-}
-
 .header-icon {
   cursor: pointer;
   padding-top: 3px;
-}
-
-.body {
-  padding-top: 15px;
-  color: white;
-  text-align: center;
-}
-
-.body-services-title {
-  font-weight: 400;
-  font-size: 30px;
-  font-family: "Fahkwang", sans-serif;
-  line-height: 39px;
-  padding-bottom: 10px;
-}
-
-.body-services-points {
-  padding: 0 37px;
-  text-align: left;
-  font-family: "Fahkwang", sans-serif;
-}
-
-.body-services-point {
-  display: list-item;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 25px;
-  text-align: justify;
-  padding: 5px 0;
-}
-
-.body-quote {
-  font-family: "Fahkwang", sans-serif;
-  padding: 15px 37px;
-}
-
-.body-quote-wrapper {
-  font-family: "Fahkwang", sans-serif;
-  font-size: 18px;
-  border: 2px solid white;
-  border-radius: 15px;
-  width: 100%;
-  padding: 20px 0;
-}
-
-.quote-text {
-  padding: 5px 52px;
-}
-
-.contact-wrapper {
-  font-family: "Fahkwang", sans-serif;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 39px;
-  padding: 25px 0;
-}
-
-.email-wrapper {
-  font-family: "Fahkwang", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 39px;
-  padding: 10px 0 80px 0;
 }
 
 button, input[type="submit"], input[type="reset"] {
@@ -117,4 +42,28 @@ button, input[type="submit"], input[type="reset"] {
   text-align: center;
   width: 100%;
   padding: 15px 0;
+}
+
+.header-menu-desktop {
+  display: none;
+}
+
+@media(min-width: 1280px) {
+  .header {
+    justify-content: center;
+  }
+  .header-icon {
+    display: none;
+  }
+  .header-menu-desktop {
+    display: flex;
+    text-align: center;
+    padding-top: 20px;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 25%;
+  }
+  .selected-item {
+    color: #738f00;
+  }
 }

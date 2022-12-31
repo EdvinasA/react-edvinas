@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.scss';
-import {Menu} from '@mui/icons-material';
+import {Close, Menu} from '@mui/icons-material';
 import {Dialog, Divider} from "@mui/material";
 import Slide from '@mui/material/Slide';
 import {TransitionProps} from "@mui/material/transitions";
@@ -28,6 +28,13 @@ export default function App() {
     setOpen(false);
   };
 
+  const findLocation = (path: string) => {
+    if (window.location.pathname === path) {
+      return 'menu-item-desktop selected-item'
+    }
+    return 'menu-item-desktop'
+  }
+
   return (
       <div className="App">
         <header className="App-header">
@@ -36,6 +43,20 @@ export default function App() {
             <div className='header-icon' onClick={handleClickOpen}><Menu/></div>
           </div>
           <Divider style={{borderColor: 'white', borderBottomWidth: 'medium'}} className='header-divider'/>
+          <div className='header-menu-desktop'>
+            <a href='/'>
+              <div className={findLocation('/')}>Home</div>
+            </a>
+            <a href='/about'>
+              <div className={findLocation('/about')}>About</div>
+            </a>
+            <a href='/contact'>
+              <div className={findLocation('/contact')}>Contact</div>
+            </a>
+            <a href='/portfolio'>
+              <div className={findLocation('/portfolio')}>Portfolio</div>
+            </a>
+          </div>
         </header>
         <div>
           <RouterProvider router={routes}/>
