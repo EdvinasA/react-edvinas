@@ -1,7 +1,6 @@
 import type { Router } from '@remix-run/router';
 import { createBrowserRouter } from 'react-router-dom';
 import { RouteObject } from "react-router";
-import App from "./App";
 import AboutComponent from "./components/AboutComponent/AboutComponent";
 import ContactComponent from "./components/ContactComponent/ContactComponent";
 import PortfolioComponent from "./components/PortfolioComponent/PortfolioComponent";

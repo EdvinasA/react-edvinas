@@ -67,3 +67,12 @@ button, input[type="submit"], input[type="reset"] {
     color: #738f00;
   }
 }
+
+.header-title-animated {
+  transform: translateY(15%);
+  transition: transform 1.0s ease-in-out;
+}
+
+.header-title-animated.show {
+  transform: translateY(-150%);
+}

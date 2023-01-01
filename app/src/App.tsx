@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.scss';
-import {Close, Menu} from '@mui/icons-material';
+import {Menu} from '@mui/icons-material';
 import {Dialog, Divider} from "@mui/material";
 import Slide from '@mui/material/Slide';
 import {TransitionProps} from "@mui/material/transitions";
@@ -39,7 +39,7 @@ export default function App() {
       <div className="App">
         <header className="App-header">
           <div className='header'>
-            <div><a href="/">Edvinas Alimas</a></div>
+            <div className='header-title-animated'><a href="/">Edvinas Alimas</a></div>
             <div className='header-icon' onClick={handleClickOpen}><Menu/></div>
           </div>
           <Divider style={{borderColor: 'white', borderBottomWidth: 'medium'}} className='header-divider'/>

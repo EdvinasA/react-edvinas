@@ -1,9 +1,6 @@
 import React from 'react';
 import './AboutComponent.scss';
 
-interface AboutComponentProps {
-}
-
 const AboutComponent = () => {
   return (
       <div className='about'>
@@ -19,7 +16,7 @@ const AboutComponent = () => {
           <a className='about-contact-button' href="mailto:edvinasalimas98@gmail.com">Contact</a>
         </div>
         <div>
-          <div className='about-picture'><img src={require('./another-picture.jpg')} alt='Secondary picture'/></div>
+          <div className='about-picture'><img src={require('./another-picture.jpg')} alt='Secondary of me'/></div>
           <div className='about-description-title'>Professional History</div>
           <div className='experience-wrapper'>
             <div className='experience-title'>Accountant</div>
